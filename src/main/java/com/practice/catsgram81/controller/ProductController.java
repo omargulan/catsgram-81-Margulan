@@ -54,6 +54,8 @@ public class ProductController {
                     findListProducts.add(product);
                 }
             }
+        }else {
+            return products;
         }
         return findListProducts;
     }

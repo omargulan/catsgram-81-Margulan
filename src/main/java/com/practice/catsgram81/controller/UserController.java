@@ -1,9 +1,5 @@
 package com.practice.catsgram81.controller;
-import java.time.LocalDate;
 
-import com.practice.catsgram81.Exception.InvalidEmailException;
-import com.practice.catsgram81.Exception.UserAlreadyExistException;
-import com.practice.catsgram81.model.Post;
 import com.practice.catsgram81.model.User;
 import com.practice.catsgram81.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -11,8 +7,6 @@ import org.springframework.web.bind.annotation.*;
 
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor

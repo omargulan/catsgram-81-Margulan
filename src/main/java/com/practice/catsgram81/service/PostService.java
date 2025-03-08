@@ -1,8 +1,7 @@
 package com.practice.catsgram81.service;
 
-import com.practice.catsgram81.Exception.InvalidEmailException;
-import com.practice.catsgram81.Exception.PostNotFoundException;
-import com.practice.catsgram81.Exception.UserNotFoundException;
+import com.practice.catsgram81.exception.PostNotFoundException;
+import com.practice.catsgram81.exception.UserNotFoundException;
 import com.practice.catsgram81.model.Post;
 import com.practice.catsgram81.model.User;
 import lombok.RequiredArgsConstructor;

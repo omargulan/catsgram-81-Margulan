@@ -1,12 +1,12 @@
 package com.practice.catsgram81.service;
 
-import com.practice.catsgram81.Exception.InvalidEmailException;
-import com.practice.catsgram81.Exception.UserAlreadyExistException;
+import com.practice.catsgram81.exception.InvalidEmailException;
+import com.practice.catsgram81.exception.UserAlreadyExistException;
+import com.practice.catsgram81.exception.UserNotFoundException;
 import com.practice.catsgram81.model.User;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import java.time.LocalDate;
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -55,7 +55,7 @@ public class UserService {
                 return user;
             }
         }
-        return null;
+        throw new UserNotFoundException("пользовател не найден");
     }
 
 }
